@@ -1,0 +1,4 @@
+# 项目排除路径
+/diaoyang-admin/target/
+/diaoyang-blog/target/
+/diaoyang-framework/target/
