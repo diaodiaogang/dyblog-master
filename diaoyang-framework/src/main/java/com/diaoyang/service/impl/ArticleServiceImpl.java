@@ -18,10 +18,12 @@ import com.diaoyang.vo.HotArticleVo;
 import com.diaoyang.vo.PageVo;
 import lombok.extern.slf4j.Slf4j;
 import org.jcp.xml.dsig.internal.dom.ApacheData;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Function;
@@ -40,23 +42,27 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
     private CategoryService categoryService;
     @Override
     public ResponseResult hotArticleList() {
-        //1.查询热门前十文章并封装返回
-        LambdaQueryWrapper<Article> wrapper = new LambdaQueryWrapper<>();
+        //查询热门文章 封装成ResponseResult返回
+        LambdaQueryWrapper<Article> queryWrapper = new LambdaQueryWrapper<>();
+        //必须是正式文章
+        queryWrapper.eq(Article::getStatus,0);
+        //按照浏览量进行排序
+        queryWrapper.orderByDesc(Article::getViewCount);
+        //最多只查询10条
+        Page<Article> page = new Page(1,10);
+        page(page,queryWrapper);
 
-        Page<Article> page = new Page(1, 10);
-        //2.必须正式文章
-        wrapper.eq(Article::getStatus, SystemConstants.ARTICLE_STATUS_NORMAL);
-
-        //3.按浏览量排序
-        wrapper.orderByAsc(Article::getViewCount);
-        Page<Article> articlePage = page(page, wrapper);
-        List<Article> records = articlePage.getRecords();
-        if (records==null){
-            return ResponseResult.queryNull();
+        List<Article> articles = page.getRecords();
+        //bean拷贝
+        List<HotArticleVo> articleVos = new ArrayList<>();
+        for (Article article : articles) {
+            HotArticleVo vo = new HotArticleVo();
+            BeanUtils.copyProperties(article,vo);
+            articleVos.add(vo);
         }
-        List<HotArticleVo> hotArticleVos = BeanCopyUtils.copyBeanList(records, HotArticleVo.class);
 
-        return ResponseResult.okResult(hotArticleVos);
+        return ResponseResult.okResult(articleVos);
+
 
     }
 

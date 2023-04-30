@@ -22,9 +22,10 @@ import java.util.List;
 public class ArticleController {
     @Autowired
     private ArticleService articleService;
-@GetMapping("/hotArticle")
+@GetMapping("/hotArticleList")
   public ResponseResult<Article> hotArticleList(){
-    return articleService.hotArticleList();
+    ResponseResult responseResult = articleService.hotArticleList();
+    return responseResult;
 
 }
 @GetMapping("/articleList")

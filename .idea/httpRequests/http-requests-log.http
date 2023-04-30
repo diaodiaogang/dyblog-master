@@ -1,5 +1,11 @@
 GET http://localhost:7777/article/hotArticle
 
+<> 2023-04-30T232812.200.json
+
+###
+
+GET http://localhost:7777/article/hotArticle
+
 <> 2023-04-29T001712.200.json
 
 ###

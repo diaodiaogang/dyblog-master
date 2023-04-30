@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437984db-ed00-4ffd-bd12-ff24005800d1" name="变更" comment="写到了评论回复">
-      <change afterPath="$PROJECT_DIR$/diaoyang-blog/src/main/java/com/diaoyang/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/UploadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/impl/OssUploadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/utils/PathUtils.java" afterDir="false" />
+    <list default="true" id="437984db-ed00-4ffd-bd12-ff24005800d1" name="变更" comment="写到了图片上传">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaoyang-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/diaoyang-blog/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaoyang-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diaoyang-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/common/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/common/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diaoyang-blog/src/main/java/com/diaoyang/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diaoyang-blog/src/main/java/com/diaoyang/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/impl/OssUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/impl/OssUploadService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -97,6 +99,9 @@
     <configuration name="generated-requests | #34" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="34" requestIdentifier="#34" runType="运行单个请求">
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #41" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="41" requestIdentifier="#41" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
     <configuration name="DiaoYangBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="diaoyang-blog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.diaoyang.DiaoYangBlogApplication" />
@@ -113,6 +118,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DiaoYangBlogApplication" />
+        <item itemvalue="HTTP 请求.generated-requests | #41" />
         <item itemvalue="HTTP 请求.generated-requests | #34" />
       </list>
     </recent_temporary>
@@ -143,7 +149,7 @@
       <workItem from="1682784415694" duration="369000" />
       <workItem from="1682784799617" duration="638000" />
       <workItem from="1682828098248" duration="2566000" />
-      <workItem from="1682851648875" duration="3695000" />
+      <workItem from="1682851648875" duration="6358000" />
     </task>
     <task id="LOCAL-00001" summary="写到了评论回复">
       <created>1682830135955</created>
@@ -166,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682830574262</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="写到了图片上传">
+      <created>1682867124977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682867124977</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +193,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="个人更新需求" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -191,7 +216,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="写到了评论回复" />
-    <option name="LAST_COMMIT_MESSAGE" value="写到了评论回复" />
+    <MESSAGE value="写到了图片上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="写到了图片上传" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -222,9 +248,9 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/diaoyang-framework/src/main/java/com/diaoyang/service/impl/OssUploadService.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/diaoyang-blog/src/main/java/com/diaoyang/controller/ArticleController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
