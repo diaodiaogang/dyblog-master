@@ -1,0 +1,42 @@
+GET http://localhost:7777/article/hotArticle
+
+<> 2023-04-29T001712.200.json
+
+###
+
+GET http://localhost:7777/article/hotArticle
+
+<> 2023-04-25T215813.200.json
+
+###
+
+GET http://localhost:7777/article/list
+
+<> 2023-04-25T210812.200.json
+
+###
+
+GET http://localhost:7777/article/list
+
+<> 2023-04-25T210531.401.json
+
+###
+
+GET http://localhost:7777/article/list
+
+<> 2023-04-25T210403.401.json
+
+###
+
+GET http://localhost:7777/list
+
+<> 2023-04-25T210320.401.json
+
+###
+
+GET http://localhost:7777/list
+
+<> 2023-04-25T210237.401.json
+
+###
+

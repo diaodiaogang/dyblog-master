@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-04-25T13:05:30.986+00:00",
+  "status": 401,
+  "error": "Unauthorized",
+  "path": "/article/list"
+}
