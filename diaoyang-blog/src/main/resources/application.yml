@@ -1,6 +1,9 @@
 server:
   port: 7777
-
+oss:
+  accessKey: KtYLGjx0Ib_yE6qRwwtVS7EtllU1wBvgRQUxBbSF
+  secretKey: N3ZhyfIjQFE1zETfeF4ZBMmx3edMDBZRl5_lB7dF
+  bucket: diaoyang-blog
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/dy_blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
@@ -14,7 +17,7 @@ spring:
 
   redis:
 #    家的ip注意修改
-    host: 192.168.86.128
+    host: 192.168.86.129
     port: 6379
     password: 123456
     lettuce:

@@ -19,7 +19,8 @@ public enum AppHttpCodeEnum {
     //查询结果为空返回这个
     QUERY_ERROR(500,"查询结果为空"),
     LOGIN_ERROR(505,"用户名或密码错误"),
-    CONTENT_NOT_NULL(506,"内容不能为空" );
+    CONTENT_NOT_NULL(506,"内容不能为空" ),
+    FILE_TYPE_ERROR(507,"图片不能为空" );
 
     int code;
     String msg;
